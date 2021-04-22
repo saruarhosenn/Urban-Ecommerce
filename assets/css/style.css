@@ -50,6 +50,8 @@ Main Menu
 }
 
 .main-menu ul li a {
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
 	transition: all .3s;
 	padding: 4rem 0;
 }
@@ -123,6 +125,8 @@ Mega Menu Here
 .mega-menu ul li a .m-icon {
 	display: none;
 	color: var(--6E);
+	-webkit-transition: all .4s;
+	-o-transition: all .4s;
 	transition: all .4s;
 }
 
@@ -184,6 +188,8 @@ Full Screen Mobail Menu Search Box
 	top: -100%;
 	left: 0;
 	background-color: rgba(110, 152, 166, 0.93);
+	-webkit-transition: .5s;
+	-o-transition: .5s;
 	transition: .5s;
 }
 
@@ -262,8 +268,10 @@ Start Hero Section
 
 .hero-img img {
 	height: 59.5rem;
-	object-fit: cover;
-	object-position: top;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	-o-object-position: top;
+	   object-position: top;
 	border-radius: 1rem 0 0 1rem;
 }
 
@@ -326,8 +334,10 @@ Start Shop Section
 
 .shop-img-3 img {
 	height: 55.8rem;
-	object-fit: cover;
-	object-position: center;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	-o-object-position: center;
+	   object-position: center;
 	border-radius: 1rem;
 }
 
@@ -568,7 +578,9 @@ Start Featured Section
 }
 
 .featured .featured-img:hover {
-	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	    -ms-transform: scale(1.2);
+	        transform: scale(1.2);
 }
 
 /* 
@@ -607,11 +619,15 @@ footer {
 }
 
 .social-link li a {
+	-webkit-transition: all .4s;
+	-o-transition: all .4s;
 	transition: all .4s;
 }
 
 .social-link li a:hover {
-	transform: scale(1.1)
+	-webkit-transform: scale(1.1);
+	    -ms-transform: scale(1.1);
+	        transform: scale(1.1)
 }
 
 .social-link li a img {
@@ -640,6 +656,34 @@ footer {
 
 .footer-subscribe form button {
 	cursor: pointer;
+}
+
+.footer-subscribe form input::-webkit-input-placeholder {
+	font-family: 'Open-Sans-400';
+	font-size: 1.4rem;
+	color: var(--FF);
+	padding-right: .4rem;
+}
+
+.footer-subscribe form input::-moz-placeholder {
+	font-family: 'Open-Sans-400';
+	font-size: 1.4rem;
+	color: var(--FF);
+	padding-right: .4rem;
+}
+
+.footer-subscribe form input:-ms-input-placeholder {
+	font-family: 'Open-Sans-400';
+	font-size: 1.4rem;
+	color: var(--FF);
+	padding-right: .4rem;
+}
+
+.footer-subscribe form input::-ms-input-placeholder {
+	font-family: 'Open-Sans-400';
+	font-size: 1.4rem;
+	color: var(--FF);
+	padding-right: .4rem;
 }
 
 .footer-subscribe form input,
