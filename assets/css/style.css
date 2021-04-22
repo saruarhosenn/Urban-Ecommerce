@@ -1,0 +1,738 @@
+/* 
+===============================
+Variables
+===============================
+*/
+:root {
+	--42: 4.2rem;
+	--30: 3rem;
+	--24: 2.4rem;
+	--22: 2.2rem;
+	--20: 2rem;
+	--18: 1.8rem;
+	--16: 1.6rem;
+	--14: 1.4rem;
+	--6E: #6E98A6;
+	--FF: #FFFFFF;
+	--76: #767676;
+	--DA: #DAD398;
+	--B4: #B46254;
+	--D5: #D59D75;
+	--76: #767676;
+}
+
+html {
+	font-size: 62.5%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	scroll-behavior: smooth;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+/* 
+===============================
+Start Header Section
+===============================
+*/
+header {
+	background: var(--FF);
+}
+
+/*------------ 
+Main Menu 
+-------------*/
+.main-menu ul li {
+	margin: 0 2rem;
+}
+
+.main-menu ul li a {
+	transition: all .3s;
+	padding: 4rem 0;
+}
+
+.main-menu ul li a:hover {
+	color: var(--DA);
+}
+
+.menu-close-btn {
+	cursor: pointer;
+	position: absolute;
+	top: 2rem;
+	right: 2rem;
+	display: none;
+}
+.menu-close-btn span {
+	color: var(--6E);
+	font-size: 3.8rem;
+}
+
+/*-------------
+Mega Menu Here
+---------------*/
+.mega-menu-wrapper-2 > * {
+	padding: 0;
+	margin: 0;
+}
+
+.mega-menu {
+	opacity: 0;
+	visibility: hidden;
+	border-top: .2rem solid var(--6E);
+	z-index: 99999999999999999;
+	position: absolute;
+	top: 130%;
+	left: 0;
+	width: 100%;
+	padding: 4rem 3rem 0rem 4rem;
+	background: var(--FF);
+	border-radius: 0 0 1rem 1rem;
+}
+
+.mega-menu-link:hover .mega-menu {
+	top: 100%;
+	opacity: 1;
+	visibility: visible;
+}
+
+.menu-3 {
+	margin-bottom: 2rem;
+}
+
+.mega-menu ul li {
+	margin: 0;
+}
+
+.mega-menu ul li:not(:last-child) {
+	margin-bottom: .7rem;
+}
+
+.mega-menu ul li:first-child {
+	margin-bottom: 1.5rem;
+}
+
+.mega-menu ul li a {
+	padding: 0;
+	font-size: 1.4rem;
+	color: var(--76);
+}
+
+.mega-menu ul li a .m-icon {
+	display: none;
+	color: var(--6E);
+	transition: all .4s;
+}
+
+.mega-menu ul li a:hover .m-icon {
+	display: inline-block;
+}
+
+.mega-menu ul li a:hover {
+	font-family: 'Open-Sans-600';
+	color: #000000;
+}
+
+.main-menu ul .mega-menu-link a .plus-icon {
+	display: none;
+}
+
+/*-- -------------
+Search & Cart 
+----------------*/
+.s-c-p ul li:not(:first-child) {
+	margin-left: 3rem;
+}
+
+.s-c-p form {
+	width: 25rem;
+	background: var(--FF);
+	border-bottom: .1rem solid var(--6E);
+}
+
+.expand-searc-open {
+	display: none;
+}
+
+.s-c-p form input {
+	padding-right: .2rem;
+	padding-bottom: .6rem;
+	font-size: 1.6rem;
+}
+
+.s-c-p form button {
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.s-c-p .h-cart img,
+.s-c-p .h-profile img {
+	margin-right: 1rem;
+}
+
+
+/*---------------------------------
+Full Screen Mobail Menu Search Box
+---------------------------------*/
+.overlay {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	top: -100%;
+	left: 0;
+	background-color: rgba(110, 152, 166, 0.93);
+	transition: .5s;
+}
+
+.overlay-content {
+	position: relative;
+	top: 46%;
+	width: 90%;
+	text-align: center;
+	margin-top: 3rem;
+	margin: auto;
+}
+
+.overlay .closebtn {
+	position: absolute;
+	top: 2rem;
+	right: 3rem;
+	font-size: 4rem;
+	cursor: pointer;
+	color: var(--FF);
+}
+
+.overlay input[type=text] {
+	padding: 1.5rem;
+	font-size: var(--16);
+	width: 85%;
+	background: var(--FF);
+	color: var(--76);
+}
+
+.overlay button {
+	width: 15%;
+	padding: 1.5rem;
+	background: var(--76);
+	font-size: var(--16);
+	cursor: pointer;
+}
+
+/*------------
+Menu Open Btn 
+-------------*/
+.menu-open-btn {
+	display: none;
+	cursor: pointer;
+}
+
+.menu-open-btn > * {
+	width: 3rem;
+	height: .3rem;
+	margin: .5rem 0;
+	cursor: pointer;
+	background: var(--6E);
+}
+
+/* 
+===============================
+End Header Section
+===============================
+*/
+
+
+/* 
+===============================
+Start Hero Section
+===============================
+*/
+.hero-wrapper {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.hero-wrapper > * {
+	padding-left: 0;
+	padding-right: 0;
+	margin-bottom: 0;
+}
+
+.hero-img img {
+	height: 59.5rem;
+	object-fit: cover;
+	object-position: top;
+	border-radius: 1rem 0 0 1rem;
+}
+
+.hero-text-box {
+	border-radius: 0 1rem 1rem 0;
+	height: 59.5rem;
+	background: var(--6E);
+}
+
+.hero-title {
+	padding-left: 3rem;
+	padding-right: 6rem;
+}
+
+.hero-title h1,
+.hero-title p,
+.hero-title .hero-btn {
+	color: var(--FF);
+}
+
+.hero-title p {
+	margin: 1.7rem 0 4.7rem;
+	font-size: var(--16);
+}
+
+.hero-title .hero-btn {
+	font-size: var(--24);
+	min-width: 19rem;
+	height: 6rem;
+	line-height: 6rem;
+	background: var(--DA);
+}
+
+.flower-br {
+	position: absolute;
+	right: 2rem;
+	bottom: 4rem;
+	max-width: 20rem;
+}
+
+/* 
+===============================
+End Hero Section
+===============================
+*/
+
+
+/* 
+===============================
+Start Shop Section
+===============================
+*/
+.shop-section {
+	padding-top: 3rem;
+}
+
+.shop-gellary-1 .shop-img-2 {
+	margin-bottom: 0;
+}
+
+.shop-img-3 img {
+	height: 55.8rem;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 1rem;
+}
+
+.overlay-text-1,
+.overlay-text-2 {
+	padding: 16px 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.overlay-text-left h2 span:first-child {
+	color: var(--FF);
+}
+
+.overlay-text-left h2 span:last-child {
+	color: var(--DA);
+}
+
+.overlay-text-left h2 span:first-child,
+.overlay-text-right h2 {
+	font-size: var(--30);
+}
+
+.overlay-text-right h2 {
+	color: var(--D5);
+}
+
+.overlay-text-top {
+	font-size: var(--30);
+}
+
+.overlay-text-top span,
+.overlay-text-bottom span,
+.overlay-text-2-top span {
+	line-height: 1;
+}
+
+.overlay-text-top span:nth-child(odd) {
+	color: var(--FF);
+}
+
+.overlay-text-top span:nth-child(even) {
+	color: var(--DA);
+}
+
+.overlay-text-bottom {
+	color: var(--FF);
+	font-size: var(--24);
+}
+
+.overlay-text-2 {
+	right: 0;
+}
+
+.overlay-text-2-top {
+	font-size: 5.4rem;
+}
+
+.overlay-text-2-bottom a {
+	width: 14.5rem;
+	height: 4.8rem;
+	line-height: 4.8rem;
+	color: var(--FF);
+	background: var(--6E);
+}
+/* 
+===============================
+End Shop Section
+===============================
+*/
+
+
+/* 
+=====================================
+Start Best Selling Products Section
+=====================================
+*/
+.best-selling-products {
+	padding-top: 3rem;
+	padding-bottom: 5rem;
+}
+
+.flower-tl {
+	position: absolute;
+	top: 4rem;
+	left: -8rem;
+	max-width: 20rem;
+}
+
+.selling-products-title p {
+	margin: .8rem 0 3.6rem;
+	font-size: var(--20);
+	color: var(--DA);
+}
+
+.products-text .products-name {
+	margin-top: 2.2rem;
+}
+
+.products-text .products-desc {
+	margin: .5rem 0;
+	line-height: 1.4;
+	
+}
+
+.products-text .products-price span {
+	color: var(--B4);
+	margin-right: 1.5rem;
+}
+
+.products-text .products-price strike {
+	color: var(--76);
+}
+
+.products-cart {
+	margin-top: 1.5rem;
+}
+
+.products-cart .products-cart-btn::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: .1rem;
+	background: var(--6E);
+	-webkit-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+	overflow: hidden;
+}
+
+.products-cart .products-cart-btn:hover::after {
+	width: 0;
+}
+
+.swiper-prev-1 {
+	top: 44%;
+}
+
+.swiper-lider-2 {
+	margin-top: 4rem;
+}
+
+.swiper-prev-2 {
+	top: 28.5%;
+}
+
+/* 
+=====================================
+End Best Selling Products Section
+=====================================
+*/
+
+
+/* 
+==================================
+Start Testimonial Section
+==================================
+*/
+.testimonial-section {
+	padding-top: 2rem;
+	padding-bottom: 6.5rem;
+}
+
+.section-title-md {
+	display: none;
+}
+
+.section-title-md h2,
+.section-title h2 {
+	margin: .8rem 0 3rem;
+}
+
+.section-title-md p,
+.section-title p {
+	margin-top: -1rem;
+	color: var(--DA);
+}
+
+.testimonial .client-qoute {
+	width: 8rem;
+	height: 8rem;
+	background: var(--DA);
+	position: absolute;
+	right: 4rem;
+	bottom: -4rem;
+}
+
+.testimonial .client-name {
+	margin-top: 1.8rem;
+}
+
+.testimonial .client-name h3 {
+	font-size: var(--22);
+}
+
+.testimonial .client-name p {
+	margin: .7rem 0 .4rem;
+}
+
+.testimonial .client-desc p {
+	color: var(--76);
+}
+
+.t-slide-btn button {
+	margin-left: auto;
+}
+
+/* 
+==================================
+End Testimonial Section
+==================================
+*/
+
+
+/* 
+===============================
+Start Featured Section
+===============================
+*/
+.featured-title {
+	margin-bottom: 3rem;
+}
+
+.featured-wrapper {
+	margin-left: -5rem;
+	margin-right: -5rem;
+}
+
+.featured-wrapper > * {
+	padding-left: 5rem;
+	padding-right: 5rem;
+	margin-bottom: 5rem;
+}
+
+.featured .featured-img:hover {
+	transform: scale(1.2);
+}
+
+/* 
+===============================
+End Featured Section
+===============================
+*/
+
+
+/* 
+===============================
+Start Footer Section
+===============================
+*/
+
+footer {
+	padding-bottom: 5rem;
+}
+
+.t-FF {
+	color: var(--FF);
+}
+
+.footer-bg {
+	padding: 5rem 0 1.8rem;
+	background: var(--6E);
+	border-radius: 1rem;
+}
+
+.social-link {
+	margin: 3rem 0 2.7rem;
+}
+
+.social-link li:not(:last-of-type) {
+	margin-right: 1.6rem;
+}
+
+.social-link li a {
+	transition: all .4s;
+}
+
+.social-link li a:hover {
+	transform: scale(1.1)
+}
+
+.social-link li a img {
+	vertical-align: middle;
+}
+
+.f-link-1 {
+	padding-left: 3rem;
+}
+
+.footer-page-link li:not(:last-child) {
+	margin-bottom: 1.5rem;
+}
+
+.footer-subscribe form {
+	margin: 3rem 0 4.5rem;
+	border-bottom: .1rem solid var(--FF);
+	padding-bottom: .6rem;
+	;
+}
+
+.footer-subscribe form input,
+.footer-subscribe form button {
+	background-color: transparent;
+}
+
+.footer-subscribe form button {
+	cursor: pointer;
+}
+
+.footer-subscribe form input,
+.footer-subscribe form input::placeholder {
+	font-family: 'Open-Sans-400';
+	font-size: 1.4rem;
+	color: var(--FF);
+	padding-right: .4rem;
+}
+
+.email li img {
+	margin-top: .5rem;
+	margin-right: 1.4rem;
+	vertical-align: bottom;
+}
+
+/* 
+===============================
+End Footer Section
+===============================
+*/
+
+
+/* 
+=======================
+Back to top 
+=======================
+*/
+#up__btn {
+	opacity: 0;
+	position: fixed;
+	bottom: 3rem;
+	right: 3rem;
+	z-index: 99999999;
+	font-size: 1.8rem;
+	background: var(--B4);
+	cursor: pointer;
+	width: 3.5rem;
+	height: 3.5rem;
+	-webkit-animation: myBtn 3.5s infinite linear;
+	animation: myBtn 3.5s infinite linear;
+}
+
+@-webkit-keyframes myBtn {
+	0% {
+		right: 3rem;
+		bottom: 4rem;
+	}
+
+	25% {
+		bottom: 2rem;
+		right: 3rem;
+	}
+
+	50% {
+		right: 3rem;
+		bottom: 4rem;
+	}
+
+	75% {
+		bottom: 2rem;
+		right: 3rem;
+	}
+
+	100% {
+		right: 3rem;
+		bottom: 4rem;
+	}
+}
+
+@keyframes myBtn {
+	0% {
+		right: 3rem;
+		bottom: 4rem;
+	}
+
+	25% {
+		bottom: 2rem;
+		right: 3rem;
+	}
+
+	50% {
+		right: 3rem;
+		bottom: 4rem;
+	}
+
+	75% {
+		bottom: 2rem;
+		right: 3rem;
+	}
+
+	100% {
+		right: 3rem;
+		bottom: 4rem;
+	}
+}

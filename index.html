@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Urban</title>
+	<!--  FONTS -->
+	<link rel="stylesheet" href="assets/fonts/fonts.css" />
+	<!-- CSS HERE -->
+	<link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="assets/css/default.css" />
+	<link rel="stylesheet" href="assets/css/flexBox.css" />
+	<link rel="stylesheet" href="assets/css/reuseble-code.css" />
+	<link rel="stylesheet" href="assets/css/style.css" />
+	<link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+
+<body>
+
+
+	<!-- 
+	  =====================================================
+	  Start Header Section 
+	  =====================================================
+ 	-->
+	<header>
+		<div class="container p-relative header-container">
+			<nav class="flex justify-between align-center">
+				<div class="logo-area">
+					<a href="index.html">
+						<img src="assets/images/logo.png" alt="logo" class="logo">
+					</a>
+				</div>
+
+				<!----- Main Menu ----->
+				<div class="main-menu" id="menu">
+					<!-- Menu Close Btn -->
+					<div class="menu-close-btn" onclick="closeMenu()">
+						<span>&times;</span>
+					</div>
+					
+					<ul>
+						<li class="d-inline-block"><a href="javascript:void(0)" class="capitalize os-400 p-text">home</a></li>
+						<li class="d-inline-block mega-menu-link flex">
+							<a href="javascript:void(0)" class="capitalize os-400 p-text flex justify-between align-center"><span>shop</span><img data-container="toggle-1" src="assets/svg-icon/chevron-down.svg" alt="chevron-down" class="plus-icon js-toggle">
+							</a> 
+
+							<!--- Mega Menu --->
+							<div class="mega-menu transition toggle-container" id="toggle-1">
+								<div class="wrapper mega-menu-wrapper-1">
+									<div class="item-xl-6">
+										<div class="wrapper mega-menu-wrapper-2">
+											<div class="item-xl-3 item-sm-6 item-md-3 item-6">
+												<ul>
+													<li class="pd-700 p-text">
+														Man
+													</li>
+													<li>
+														<a href="javascript:void(0)" class="os-400"><span class="m-icon">▸</span> Shirt</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)" class="os-400"><span class="m-icon">▸</span> Pant</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)" class="os-400"><span class="m-icon">▸</span> Fotua</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)" class="os-400"><span class="m-icon">▸</span> Panjabi</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)" class="os-400"><span class="m-icon">▸</span> T-Shirt</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)" class="os-400"><span class="m-icon">▸</span> Polo</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)" class="os-400"><span class="m-icon">▸</span> Shoe</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)" class="os-400"><span class="m-icon">▸</span> Perfume</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)" class="os-400"><span class="m-icon">▸</span> Watch</a>
+													</li>
+												</ul>
+											</div>
+											<div class="item-xl-3 item-sm-6 item-md-3 item-6">
+												<ul>
+													<li class="pd-700 p-text">
+														Women
+													</li>
+													<li>
+														<a href="javascript:void(0)" class="os-400"><span class="m-icon">▸</span> Shirt</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)" class="os-400"><span class="m-icon">▸</span> Pant</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)" class="os-400"><span class="m-icon">▸</span> Sharee</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)" class="os-400"><span class="m-icon">▸</span> Lehenga</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)" class="os-400"><span class="m-icon">▸</span> T-Shirt</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)" class="os-400"><span class="m-icon">▸</span> Polo</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)" class="os-400"><span class="m-icon">▸</span> Shoe</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)" class="os-400"><span class="m-icon">▸</span> Perfume</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)" class="os-400"><span class="m-icon">▸</span> Watch</a>
+													</li>
+												</ul>
+											</div>
+											<div class="item-xl-3 item-sm-6 item-md-3 item-6">
+												<ul class="menu-3">
+													<li class="pd-700 p-text">
+														Summer
+													</li>
+													<li>
+														<a href="javascript:void(0)" class="os-400"><span class="m-icon">▸</span> Mini shirt</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)" class="os-400"><span class="m-icon">▸</span> Short pant</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)" class="os-400"><span class="m-icon">▸</span> Cotton T-Shirt</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)" class="os-400"><span class="m-icon">▸</span> H&M Polo</a>
+													</li>
+												</ul>
+												<ul>
+													<li class="pd-700 p-text">
+														Offer
+													</li>
+													<li>
+														<a href="javascript:void(0)" class="os-400"><span class="m-icon">▸</span> Mini shirt</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)" class="os-400"><span class="m-icon">▸</span> Short pant</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)" class="os-400"><span class="m-icon">▸</span> Cotton T-Shirt</a>
+													</li>
+												</ul>
+											</div>
+											<div class="item-xl-3 item-sm-6 item-md-3 item-6">
+												<ul>
+													<li class="pd-700 p-text">
+														Gift Item
+													</li>
+													<li>
+														<a href="javascript:void(0)" class="os-400"><span class="m-icon">▸</span> Mystery package</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)" class="os-400"><span class="m-icon">▸</span> Birthday Items</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)" class="os-400"><span class="m-icon">▸</span> Valentine gift</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)" class="os-400"><span class="m-icon">▸</span> National Day Items</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)" class="os-400"><span class="m-icon">▸</span> Wedding gift</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="item-xl-6 mega-menu-img-col">
+										<div class="mega-menu-img">
+											<img src="assets/images/mega-menu.png" alt="shop" class="w-100">
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--- Mega Menu --->
+
+						</li>
+						<li class="d-inline-block"><a href="javascript:void(0)" class="capitalize os-400 p-text">product</a></li>
+						<li class="d-inline-block"><a href="javascript:void(0)" class="capitalize os-400 p-text">page</a></li>
+						<li class="d-inline-block"><a href="javascript:void(0)" class="capitalize os-400 p-text">blog</a></li>
+					</ul>
+				</div>
+
+				<!----- Search, Cart & Menu Btn ----->
+				<div class="s-c-p">
+					<ul class="flex align-center">
+						<li class="expand-searc-open">
+							<img src="assets/svg-icon/l-search.svg" alt="search" onclick="openSearch()">
+						</li>
+						<li class="h-search-form">
+							<form action="javascript:void(0)" method="get" class="flex align-center">
+								<input type="text" name="header-search" id="" class="p-text os-400 w-100">
+								<button type="submit" class="p-text">
+									<img src="assets/svg-icon/search.svg" alt="search">
+								</button>
+							</form>
+						</li>
+						<li class="flex align-center h-cart">
+							<img src="assets/svg-icon/shopping-bag.svg" alt="shopping bag">
+							<a href="javascript:void(0)">
+								<span class="p-text os-400">Cart</span>
+							</a>
+						</li>
+						<li class="h-profile flex align-center">
+							<img src="assets/images/h-p.png" alt="profile">
+							<a href="javascript:void(0)" class="capitalize p-text os-400">Alex Pitter</a>
+						</li>
+						
+						<!-- Menu Open Btn -->
+						<li class="menu-open-btn" onclick="openMenu()">
+							<div></div>
+							<div></div>
+							<div></div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+
+		<!----- Full Screen Mobail Menu Search Box ----->
+		<div id="myOverlay" class="overlay">
+			<span class="closebtn" onclick="closeSearch()" title="Close Overlay">&times;</span>
+			<div class="overlay-content">
+				<form action="javascript:void(0)" class="flex">
+					<input type="text" name="header-search" lass="s-400">
+					<button type="submit" class="p-text flex align-center justify-center">
+						<img src="assets/svg-icon/md-search.svg" alt="search">
+					</button>
+				</form>
+			</div>
+		</div>
+	</header>
+	<!-- 
+	  =====================================================
+	  End Header Section 
+	  =====================================================
+ 	-->
+
+
+	<main>
+
+		<!-- 
+		  =====================================================
+		  Start Hero Section 
+		  =====================================================
+ 		-->
+
+		<section class="hero-section">
+			<div class="container-fluid">
+				<div class="wrapper hero-wrapper">
+					<div class="item-xl-7 item-lg-6">
+						<div class="hero-img">
+							<img src="assets/images/hero.png" alt="hero" class="img-fluid">
+						</div>
+					</div>
+					<div class="item-xl-5 item-lg-6 hero-text-box flex align-center p-relative">
+						<div class="hero-title">
+							<h1 class="heading pd-700">New Fashion Trends <br>for Summer</h1>
+							<p class="os-400">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.</p>
+							<a href="javascript:void(0)" class="transition btn hero-btn os-400 text-center rounded">Shop now</a>
+						</div>
+						<img src="assets/images/flower-1.png" alt="flower" class="flower-br">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 
+		  =====================================================
+		  End Hero Section 
+		  =====================================================
+ 		-->
+
+
+		<!-- 
+		  =====================================================
+		  Start Shop Section 
+		  =====================================================
+ 		-->
+
+		<section class="shop-section">
+			<div class="container">
+				<div class="wrapper">
+					<div class="item-lg-6">
+						<div class="wrapper shop-gellary-1">
+							<div class="item-md-6 item-lg-12">
+								<div class="shop-img p-relative">
+									<img src="assets/images/shop-2.png" alt="shop" class="img-fluid">
+									<div class="flex justify-between align-end overlay-text-1 align-end">
+										<div class="overlay-text-left">
+											<h2 class="pd-700">
+												<span>HipHop!</span><br>
+												<span class="heading">Summer</span>
+											</h2>
+										</div>
+										<div class="overlay-text-right">
+											<h2 class="heading os-800">Get up to 70%</h2>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item-md-6 item-lg-12 shop-img-2">
+								<div class="shop-img p-relative">
+									<img src="assets/images/shop-2.png" alt="shop" class="img-fluid">
+									<div class="flex flex-direction-col justify-between overlay-text-1">
+										<h3 class="pd-700 overlay-text-top">
+											<span class="d-block">more</span>
+											<span class="d-block">FASHION</span>
+											<span class="d-block">more</span>
+											<span class="d-block">GORGIOUS</span>
+										</h3>
+										<p class="pgo-400 overlay-text-bottom">
+											<span class="d-block">BEST COSMATICS</span>
+											<span class="d-block">COLLECTIONS</span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item-lg-6">
+						<div class="shop-img shop-img-3 p-relative">
+							<img src="assets/images/shop-3.png" alt="shop" class="img-fluid">
+							<div class="flex flex-direction-col align-end justify-between overlay-text-2">
+								<h3 class="heading pd-700 overlay-text-2-top">
+									<span class="d-block">fit easy</span>
+									<span class="d-block">summer</span>
+									<span class="d-block">crazy!!!</span>
+								</h3>
+								<div class="overlay-text-2-bottom">
+									<a href="javascript:void(0)" class="p-text os-400 text-center rounded btn transition">Shop now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 
+		  =====================================================
+		  End Shop Section 
+		  =====================================================
+ 		-->
+
+
+		<!-- 
+		  =====================================================
+		  Start Best Selling Products Section 
+		  =====================================================
+ 		-->
+
+		<section class="best-selling-products">
+			<div class="container p-relative">
+				<!-- Flower Top Leeft Image -->
+				<img src="assets/images/flower-2.png" alt="flower" class="flower-tl">
+
+				<div class="selling-products-title text-center">
+					<h2 class="heading pd-700">Meet our best selling products</h2>
+					<p class="os-400">“Best premium laxarious Brand authentic product always available for you”</p>
+				</div>
+
+				<!-- Swiper Slider Start -->
+				<div class="swiper-container swiper-container1 p-relative">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="selling-products">
+								<div class="products-img">
+									<img src="assets/images/1.png" alt="De Rose Gold Perfume" class="img-fluid">
+								</div>
+								<div class="products-text">
+									<h4 class="products-name s-heading pd-700">De Rose Gold Perfume</h4>
+									<p class="products-desc p-text os-400">Floral Green fragrance for women</p>
+									<p class="products-price p-text os-600"><span class="os-600">$55.00</span><strike class="os-400">$75.00</strike></p>
+								</div>
+								<div class="products-cart">
+									<a href="javascript:void(0)" class="products-cart-btn p-text os-400 p-relative">Add to Cart</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="selling-products">
+								<div class="products-img">
+									<img src="assets/images/2.png" alt="La Classic Car perfume" class="img-fluid">
+								</div>
+								<div class="products-text">
+									<h4 class="products-name s-heading pd-700">La Classic Car perfume</h4>
+									<p class="products-desc p-text os-400">Floral fragrance for Car</p>
+									<p class="products-price p-text os-600"><span class="os-600">$55.00</span><strike class="os-400">$75.00</strike></p>
+								</div>
+								<div class="products-cart">
+									<a href="javascript:void(0)" class="products-cart-btn p-text os-400 p-relative">Add to Cart</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="selling-products">
+								<div class="products-img">
+									<img src="assets/images/3.png" alt="De Casta Blue berry Centario" class="img-fluid">
+								</div>
+								<div class="products-text">
+									<h4 class="products-name s-heading pd-700">De Casta Blue berry Centario</h4>
+									<p class="products-desc p-text os-400">Floral sharp berry for women</p>
+									<p class="products-price p-text os-600"><span class="os-600">$55.00</span><strike class="os-400">$75.00</strike></p>
+								</div>
+								<div class="products-cart">
+									<a href="javascript:void(0)" class="products-cart-btn p-text os-400 p-relative">Add to Cart</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Swiper Slider End -->
+
+				<!-- Swiper Slider Prev Btn -->
+				<button type="button" class="swiper-prev swiper-prev-1 flex justify-center align-center circle">
+					<img src="assets/svg-icon/arrow-right.svg" alt="arrow right">
+				</button>
+			</div>
+
+			<!-- Swiper Slider 2 -->
+			<div class="container p-relative swiper-lider-2">
+				<!-- Swiper Slider Start -->
+				<div class="swiper-container swiper-container2 p-relative">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="selling-products">
+								<div class="products-img">
+									<img src="assets/images/4.png" alt="XOFOSR Bag" class="img-fluid">
+								</div>
+								<div class="products-text">
+									<h4 class="products-name s-heading pd-700">XOFOSR Bag</h4>
+									<p class="products-desc p-text os-400">Floral Green fragrance for women</p>
+									<p class="products-price p-text os-600"><span class="os-600">$55.00</span><strike class="os-400">$75.00</strike></p>
+								</div>
+								<div class="products-cart">
+									<a href="javascript:void(0)" class="products-cart-btn p-text os-400 p-relative">Add to Cart</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="selling-products">
+								<div class="products-img">
+									<img src="assets/images/5.png" alt="MAC Jacobs collections" class="img-fluid">
+								</div>
+								<div class="products-text">
+									<h4 class="products-name s-heading pd-700">MAC Jacobs collections</h4>
+									<p class="products-desc p-text os-400">Floral fragrance for Car</p>
+									<p class="products-price p-text os-600"><span class="os-600">$55.00</span><strike class="os-400">$75.00</strike></p>
+								</div>
+								<div class="products-cart">
+									<a href="javascript:void(0)" class="products-cart-btn p-text os-400 p-relative">Add to Cart</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="selling-products">
+								<div class="products-img">
+									<img src="assets/images/6.png" alt="De Casta Styles Bag" class="img-fluid">
+								</div>
+								<div class="products-text">
+									<h4 class="products-name s-heading pd-700">De Casta Styles Bag</h4>
+									<p class="products-desc p-text os-400">Floral sharp berry for women</p>
+									<p class="products-price p-text os-600"><span class="os-600">$55.00</span><strike class="os-400">$75.00</strike></p>
+								</div>
+								<div class="products-cart">
+									<a href="javascript:void(0)" class="products-cart-btn p-text os-400 p-relative">Add to Cart</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Swiper Slider End -->
+
+				<!-- Swiper Slider Prev Btn -->
+				<button type="button" class="swiper-prev swiper-prev-2 flex justify-center align-center circle">
+					<img src="assets/svg-icon/arrow-right.svg" alt="arrow right">
+				</button>
+			</div>
+		</section>
+
+		<!-- 
+		  =====================================================
+		  End Best Selling Products Section 
+		  =====================================================
+ 		-->
+
+
+		<!-- 
+		  =====================================================
+		  Start Testimonial Section 
+		  =====================================================
+ 		-->
+		<section class="testimonial-section">
+			<div class="container">
+				<div class="section-title-md">
+					<p class="p-text os-400">Clients Say about us</p>
+					<h2 class="heading pd-700">Testimonial</h2>
+				</div>
+				<!-- Swiper Slider Start -->
+				<div class="swiper-container swiper-container3">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="section-title">
+								<p class="p-text os-400">Clients Say about us</p>
+								<h2 class="heading pd-700">Testimonial</h2>
+							</div>
+							<div class="testimonial">
+								<div class="client-img p-relative">
+									<img src="assets/images/t-1.png" alt="testimonial" class="img-fluid">
+									<div class="client-qoute flex justify-center align-center rounded">
+										<img src="assets/images/qoute.png" alt="qoute">
+									</div>
+								</div>
+								<div class="client-name">
+									<h3 class="heading pd-700">Natasha Malina</h3>
+									<p class="p-text os-400">Beauty Model in USA</p>
+								</div>
+								<div class="client-desc">
+									<p class="p-text os-400">
+										Every spring I start going through dress withdrawals and go crazy over all the pretty spring dresses that come out haha. It’s like famine and then feast and dresses
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="testimonial">
+								<div class="client-img p-relative">
+									<img src="assets/images/t-2.png" alt="testimonial" class="img-fluid">
+									<div class="client-qoute flex justify-center align-center rounded">
+										<img src="assets/images/qoute.png" alt="qoute">
+									</div>
+								</div>
+								<div class="client-name">
+									<h3 class="heading pd-700">Team Xodias</h3>
+									<p class="p-text os-400">Fashion House</p>
+								</div>
+								<div class="client-desc">
+									<p class="p-text os-400">
+										Every spring I start going through dress withdrawals and go crazy over all the pretty spring dresses that come out haha. It’s like famine and then feast and dresses
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Swiper Slider End -->
+
+				<!-- Swiper Slider Prev Btn -->
+				<div class="t-slide-btn">
+					<button type="button" class="swiper-prev-3 flex justify-center align-center circle">
+						<img src="assets/svg-icon/arrow-right.svg" alt="arrow right">
+					</button>
+				</div>
+			</div>
+		</section>
+		<!-- 
+		  =====================================================
+		  End Testimonial Section 
+		  =====================================================
+ 		-->
+
+
+		<!-- 
+		  =====================================================
+		  Start Featured Section 
+		  =====================================================
+ 		-->
+		<section class="featured-section">
+			<div class="container">
+				<div class="text-center featured-title">
+					<h2 class="heading pd-700">Featured in</h2>
+				</div>
+				<div class="wrapper align-center featured-wrapper">
+					<div class="item-lg-2 item-sm-4 item-6">
+						<div class="featured">
+							<img src="assets/images/f-1.png" alt="featured" class="transition featured-img img-fluid">
+						</div>
+					</div>
+					<div class="item-lg-2 item-sm-4 item-6">
+						<div class="featured">
+							<img src="assets/images/f-2.png" alt="featured" class="transition featured-img img-fluid">
+						</div>
+					</div>
+					<div class="item-lg-2 item-sm-4 item-6">
+						<div class="featured">
+							<img src="assets/images/f-3.png" alt="featured" class="transition featured-img img-fluid">
+						</div>
+					</div>
+					<div class="item-lg-2 item-sm-4 item-6">
+						<div class="featured">
+							<img src="assets/images/f-4.png" alt="featured" class="transition featured-img img-fluid">
+						</div>
+					</div>
+					<div class="item-lg-2 item-sm-4 item-6">
+						<div class="featured">
+							<img src="assets/images/f-5.png" alt="featured" class="transition featured-img img-fluid">
+						</div>
+					</div>
+					<div class="item-lg-2 item-sm-4 item-6">
+						<div class="featured">
+							<img src="assets/images/f-6.png" alt="featured" class="transition featured-img img-fluid">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- 
+		  =====================================================
+		  End Featured Section 
+		  =====================================================
+ 		-->
+
+	</main>
+
+	<!-- 
+	  =====================================================
+	  Start Fo0ter Section 
+	  =====================================================
+ 	-->
+	<footer>
+		<div class="container-fluid">
+			<div class="footer-bg">
+				<div class="container">
+					<div class="wrapper">
+						<div class="item-lg-3 item-md-6 item-sm-6">
+							<div class="footer-content">
+								<div class="footer-logo">
+									<img src="assets/images/footer-logo.png" alt="footer logo" class="logo">
+								</div>
+								<ul class="social-link">
+									<li class="d-inline-block"><a href="javascript:void(0)"><img class="jj" src="assets/svg-icon/facebook.svg" alt="facebook"></a></li>
+									<li class="d-inline-block"><a href="javascript:void(0)"><img class="jj" src="assets/svg-icon/twitter.svg" alt="twitter"></a></li>
+									<li class="d-inline-block"><a href="javascript:void(0)"><img class="jj" src="assets/svg-icon/linkedin.svg" alt="linkedin"></a></li>
+									<li class="d-inline-block"><a href="javascript:void(0)"><img class="jj" src="assets/svg-icon/youtube.svg" alt="youtube"></a></li>
+									<li class="d-inline-block"><a href="javascript:void(0)"><img class="jj" src="assets/svg-icon/instagram.svg" alt="instagram"></a></li>
+								</ul>
+								<div class="footer-desc">
+									<p class="p-text os-400 t-FF">
+										Every spring I start going through dress withdrawals and go crazy over all the pretty.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="item-lg-2 item-md-3 item-sm-6 item-6">
+							<ul class="footer-page-link f-content-link f-link f-link-1">
+								<li><a href="javascript:void(0)" class="t-FF p-text os-700">Shop</a></li>
+								<li><a href="javascript:void(0)" class="t-FF p-text os-700">Products</a></li>
+								<li><a href="javascript:void(0)" class="t-FF p-text os-700">Collections</a></li>
+								<li><a href="javascript:void(0)" class="t-FF p-text os-700">About us</a></li>
+								<li><a href="javascript:void(0)" class="t-FF p-text os-700">Company</a></li>
+								<li><a href="javascript:void(0)" class="t-FF p-text os-700">Blog</a></li>
+							</ul>
+						</div>
+						<div class="item-lg-2 item-md-3 item-sm-6 item-6">
+							<ul class="footer-page-link f-content-link">
+								<li><a href="javascript:void(0)" class="t-FF p-text os-400">Support</a></li>
+								<li><a href="javascript:void(0)" class="t-FF p-text os-400">Reviews</a></li>
+								<li><a href="javascript:void(0)" class="t-FF p-text os-400">Careers</a></li>
+								<li><a href="javascript:void(0)" class="t-FF p-text os-400">Contact us</a></li>
+								<li><a href="javascript:void(0)" class="t-FF p-text os-400">Privacy Policy</a></li>
+								<li><a href="javascript:void(0)" class="t-FF p-text os-400">Refund Policy</a></li>
+							</ul>
+						</div>
+						<div class="item-lg-2 item-md-6 item-sm-6">
+							<ul class="footer-page-link f-link">
+								<li><a href="javascript:void(0)" class="t-FF p-text os-400">Tearms & Condition</a></li>
+								<li><a href="javascript:void(0)" class="t-FF p-text os-400">FAQ’s</a></li>
+								<li><a href="javascript:void(0)" class="t-FF p-text os-400">Delivery</a></li>
+								<li><a href="javascript:void(0)" class="t-FF p-text os-400">Returns</a></li>
+							</ul>
+						</div>
+						<div class="item-lg-3 item-md-6">
+							<div class="footer-subscribe f-content-link">
+								<p class="p-text os-700 t-FF">Subscribe</p>
+								<form action="javascript:void(0)" method="get" class="flex align-center">
+									<input type="email" name="" id="" placeholder="Your Email" class="w-100">
+									<button type="submit"><img src="assets/svg-icon/submit-arrow-right.svg" alt="submit arrow right"></button>
+								</form>
+								<ul class="email">
+									<li class="flex align-center">
+										<img src="assets/svg-icon/mail.svg" alt="email">
+										<a href="mailto:mail@example.com" class="t-FF os-400 p-text">mail@example.com</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- 
+	  =====================================================
+	  End Fo0ter Section 
+	  =====================================================
+ 	-->
+	
+	<!----- BACK TO TOP ----->
+	<button type="button" id="up__btn" title="Go to top" class="flex align-center justify-center transition rounded">
+		<img src="assets/svg-icon/arrow-up.svg" alt="arrow up">
+	</button>
+	<!----- BACK TO TOP ----->
+	
+	<!-- JS HERE -->
+	<script src="assets/js/swiper-bundle.min.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
