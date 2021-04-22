@@ -28,7 +28,9 @@ footer {
 }
 
 .btn:hover {
-	transform: translateY(-.5rem);
+	-webkit-transform: translateY(-.5rem);
+	    -ms-transform: translateY(-.5rem);
+	        transform: translateY(-.5rem);
 }
 
 .logo {
