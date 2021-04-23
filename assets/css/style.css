@@ -185,7 +185,7 @@ Full Screen Mobail Menu Search Box
 	width: 100%;
 	position: fixed;
 	z-index: 9999999999;
-	top: -100%;
+	top: -200%;
 	left: 0;
 	background-color: rgba(110, 152, 166, 0.93);
 	-webkit-transition: .5s;
