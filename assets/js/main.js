@@ -14,7 +14,7 @@ function openSearch() {
 }
 
 function closeSearch() {
-	document.getElementById("myOverlay").style.top = "-100%";
+	document.getElementById("myOverlay").style.top = "-200%";
 }
 
 
